@@ -13,7 +13,7 @@ option(CODECOV "Enable code coverage." OFF)
 set(DEFAULT_BUILD_TYPE "Release")
 
 if (PLUGIN)
-  find_program(CLANG clang)
+  find_program(CLANG clang-9 HINTS /opt/llvm-9/bin /usr/bin /usr/local/bin)
   if (NOT CLANG)
     message(FATAL_ERROR "Clang compiler is required to use the plugin")
   endif ()
