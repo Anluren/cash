@@ -40,8 +40,13 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 
 set(PROJECT_CONFIG ${PROJECT_NAME}Config)
 
-# check dependent packages
-find_package(IVERILOG REQUIRED)
+option(SUPPORT_VERILOG "Build shared libraries" OFF)
+
+if (SUPPORT_VERILOG)
+  add_definitions(-DSUPPORT_VERILOG)
+  # check dependent packages
+  find_package(IVERILOG REQUIRED)
+endif()
 
 #
 # set source files

@@ -1,0 +1,10 @@
+{
+    "cmake.configureSettings": {
+        // Add your CMake configuration settings here
+        "JIT": "OFF",
+        "PLUGIN": "OFF",
+    },
+    "cmake.configureOnOpen": true,
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.generator": "Ninja",
+}

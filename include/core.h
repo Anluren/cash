@@ -445,7 +445,6 @@ namespace extension {
 #define __default   CH_DEFAULT
 
 #define __tap       CH_TAP
-#define __assert    CH_ASSERT
 
 #define __struct    CH_STRUCT
 #define __union     CH_UNION
@@ -459,5 +458,3 @@ namespace extension {
 #define __flip      CH_FLIP
 
 #define __requires  CH_REQUIRES
-
-#define __unused    CH_UNUSED

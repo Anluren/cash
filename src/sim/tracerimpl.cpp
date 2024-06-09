@@ -295,9 +295,7 @@ void tracerimpl::toVCD(std::ofstream& out) const {
           if (signal_size > 1) {
             out << 'b';
           }
-          size_t q = 0;
           for (auto it = value.rbegin(), end = value.rend(); it != end;) {
-            ++q;
             out << (*it++ ? '1' : '0');            
           }
           if (signal_size > 1)
